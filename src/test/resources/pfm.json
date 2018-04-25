@@ -1,0 +1,51 @@
+{
+  "name": "PFM-CHD GUI",
+  "config": {
+    "supportedLanguages": "java",
+    "exportToPlantUml": true,
+    "exportToPNG": true,
+    "exportToSVG": false,
+    "classDiagram": {
+      "showField": true,
+      "leastFieldModifier": "private",
+      "showConstructor": true,
+      "showMethod": true,
+      "onlyShowMethodInInterface": false,
+      "leastMethodModifier": "protected",
+      "getterSetterToPublicField": true,
+      "showConstructorFirst": true,
+      "sortField": false,
+      "sortMethod": false,
+      "removeDependencyIfExtendOrAggregate": true,
+      "removeFieldIfRelateToOther": true,
+      "showDependencies": true,
+      "showDependencyToSelf": false,
+      "showExtensions": true,
+      "showImplementations": true,
+      "showAggregations": true,
+      "showCompositions": true,
+      "showStaticField": true,
+      "showStaticMethod": true,
+      "showOtherClassAsBaseClass": true,
+      "generateFullName": true,
+      "showPackage": true,
+      "centerClass": "",
+      "maxDistanceToCenter": 1
+    }
+  },
+  "projects": [
+    {
+      "name": "Domain",
+      "path": "com.asml.pwo.mdp.gui.domain",
+      "sources": ["src/main/java"],
+      "config": {
+        
+      },
+      "packageConfig": {
+        "classDiagram": {
+          "showPackage": true
+        }
+      }
+    }
+  ]
+}

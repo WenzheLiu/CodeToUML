@@ -1,0 +1,49 @@
+{
+  "name": "Code To UML Product",
+  "config": {
+    "supportedLanguages": "java;scala",
+    "exportToPlantUml": true,
+    "exportToPNG": true,
+    "exportToSVG": false,
+    "classDiagram": {
+      "showField": true,
+      "leastFieldModifier": "private",
+      "showConstructor": true,
+      "showMethod": true,
+      "onlyShowMethodInInterface": false,
+      "leastMethodModifier": "protected",
+      "getterSetterToPublicField": true,
+      "showConstructorFirst": true,
+      "sortField": false,
+      "sortMethod": false,
+      "removeDependencyIfExtendOrAggregate": true,
+      "removeFieldIfRelateToOther": true,
+      "showDependencies": true,
+      "showDependencyToSelf": false,
+      "showExtensions": true,
+      "showImplementations": true,
+      "showAggregations": true,
+      "showCompositions": true,
+      "showStaticField": true,
+      "showStaticMethod": true,
+      "showOtherClassAsBaseClass": true,
+      "generateFullName": true,
+      "showPackage": false,
+      "centerClass": "",
+      "maxDistanceToCenter": 1
+    }
+  },
+  "projects": [
+    {
+      "name": "Code To UML Core Project",
+      "path": "project3",
+      "sources": ["src/main/java", "src/main/scala"],
+      "config": {
+        "exportToSVG": true
+      },
+      "packageConfig": {
+        "exportToSVG": false
+      }
+    }
+  ]
+}

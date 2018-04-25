@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane hgap="5.0" vgap="10.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wenzhe.umlgen.ui.fx.ClassDiagramParamsController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" />
+    <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" />
+      <ColumnConstraints hgrow="SOMETIMES" />
+  </columnConstraints>
+  <children>
+      <JFXCheckBox fx:id="showField" mnemonicParsing="false" selected="true" text="Show Field" />
+      <JFXCheckBox fx:id="showStaticField" mnemonicParsing="false" selected="true" text="Show Static Field" GridPane.rowIndex="1" />
+      <JFXCheckBox fx:id="sortField" mnemonicParsing="false" text="Sort Field" GridPane.rowIndex="2" />
+      <JFXCheckBox fx:id="showConstructor" mnemonicParsing="false" selected="true" text="Show Constructor" GridPane.rowIndex="3" />
+      <JFXCheckBox fx:id="showMethod" mnemonicParsing="false" selected="true" text="Show Method" GridPane.rowIndex="4" />
+      <JFXCheckBox fx:id="showStaticMethod" mnemonicParsing="false" selected="true" text="Show Static Method" GridPane.rowIndex="5" />
+      <JFXCheckBox fx:id="onlyShowMethodInInterface" mnemonicParsing="false" text="Only Show Method In Interface" GridPane.rowIndex="6" />
+      <JFXCheckBox fx:id="sortMethod" mnemonicParsing="false" text="Sort Method" GridPane.rowIndex="7" />
+      <JFXCheckBox fx:id="showConstructorFirst" mnemonicParsing="false" selected="true" text="Show Constructor First" GridPane.rowIndex="8" />
+      <JFXCheckBox fx:id="getterSetterToPublicField" mnemonicParsing="false" selected="true" text="Getter Setter To Public Field" GridPane.rowIndex="9" />
+      <JFXCheckBox fx:id="showPackage" mnemonicParsing="false" text="Show Package" GridPane.rowIndex="10" />
+      <JFXCheckBox fx:id="generateFullName" mnemonicParsing="false" selected="true" text="Generate Full Name" GridPane.rowIndex="11" />
+      <JFXCheckBox fx:id="removeFieldIfRelateToOther" mnemonicParsing="false" selected="true" text="Remove Field If Relate To Other" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="4" />
+      <JFXCheckBox fx:id="removeDependencyIfExtend" mnemonicParsing="false" selected="true" text="Remove Dependency If Extend Or Aggregate" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.halignment="LEFT" GridPane.rowIndex="11" />
+      <Label text="Least Field Modifier" GridPane.columnIndex="1" GridPane.halignment="RIGHT" />
+      <JFXComboBox fx:id="leastFieldModifier" maxWidth="1.7976931348623157E308" GridPane.columnIndex="2">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Private" />
+               <String fx:value="Package" />
+               <String fx:value="Protected" />
+               <String fx:value="Public" />
+            </FXCollections>
+         </items>
+      </JFXComboBox>
+      <Label text="Least Method Modifier" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+      <JFXComboBox fx:id="leastMethodModifier" maxWidth="1.7976931348623157E308" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Private" />
+               <String fx:value="Package" />
+               <String fx:value="Protected" />
+               <String fx:value="Public" />
+            </FXCollections>
+         </items>
+      </JFXComboBox>
+      <JFXCheckBox fx:id="enableCenterClass" mnemonicParsing="false" text="Center Class" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+      <JFXTextField fx:id="centerClass" labelFloat="true" promptText="Center Class" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Label text="Max Distance To Center" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
+      <JFXCheckBox fx:id="showExtension" mnemonicParsing="false" selected="true" text="Show Extensions" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.halignment="LEFT" GridPane.rowIndex="5" />
+      <JFXCheckBox fx:id="showImplementation" mnemonicParsing="false" selected="true" text="Show Implementations" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.halignment="LEFT" GridPane.rowIndex="6" />
+      <JFXCheckBox fx:id="showComposition" mnemonicParsing="false" selected="true" text="Show Compositions" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="7" />
+      <JFXCheckBox fx:id="showAggregation" mnemonicParsing="false" selected="true" text="Show Aggregations" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="8" />
+      <JFXCheckBox fx:id="showDependencies" mnemonicParsing="false" selected="true" text="Show Dependencies" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="9" />
+      <JFXCheckBox fx:id="showDependencyToItself" mnemonicParsing="false" text="Show Dependency To Itself" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="10" />
+      <JFXCheckBox fx:id="showOtherClassAsBase" mnemonicParsing="false" selected="true" text="Show Other Class As Base Class" GridPane.columnSpan="2147483647" GridPane.rowIndex="12" />
+      <Spinner fx:id="maxDistanceToCenter" editable="true" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+  </children>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</GridPane>

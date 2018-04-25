@@ -1,0 +1,12 @@
+<aspectj>
+
+    <aspects>
+        <aspect name="wenzhe.aop.MyAop"/>
+    </aspects>
+
+    <weaver options="-XnoInline">
+        <include within="*"/>
+   <!--      <include within="wenzhe.umlgen.*"/> -->
+    </weaver>
+
+</aspectj>
