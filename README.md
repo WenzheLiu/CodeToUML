@@ -42,11 +42,11 @@ UML输出的文件格式：
 
 如果想要任意指定文件或者文件夹继续分析生成一个类图，可以创建Standalone Class Diagram。
 
- 
+ ![alt text](https://github.com/WenzheLiu/CodeToUML/blob/master/doc/standalone.png)
 
 如果想要为一个产品，对应每个工程每个包都生成一系列类图，可以创建 Product Class Diagram。
 
- 
+ ![alt text](https://github.com/WenzheLiu/CodeToUML/blob/master/doc/product.png)
 
 可以对生成的类图做多种定制，比如当我们只对类A感兴趣，只想分析以类A相关为中心，距离为1的类图，可以选择Center Class，这样可以只显示相关度高的类.
 
@@ -56,11 +56,11 @@ CodeToUML对我很有帮助，让我能快速理解别人的代码和设计，�
 
 生成UML类图的原理如下图所示：
 
- 
+ ![alt text](https://github.com/WenzheLiu/CodeToUML/blob/master/doc/class.png)
 
 生成UML时序图的原理如下图所示：
 
- 
+ ![alt text](https://github.com/WenzheLiu/CodeToUML/blob/master/doc/sequence.png)
 
 
 代码设计上的特点
@@ -99,10 +99,10 @@ DSL风格比传统JavaFX代码要写一堆tab.setXXX()方法要简洁得多。
 
 这里作为demo，让CodeToUML工具做自我分析，分析自己源代码中关键部分产生的类图，由于整个软件代码量非常多，有上百个类，生成的UML图太过复杂，不便于贴图。因此，我们这里只演示其中的Java语法解析器部分的类图，如下图所示：
 
- 
+ ![alt text](https://github.com/WenzheLiu/CodeToUML/blob/master/doc/self_class.png)
 
 用这个工具分析它自己是如何解析类间的关系（在源码中，调用ClassRelationFactory对象的createRelations方法），这个过程所产生的时序图如下所示：
 
- 
+ ![alt text](https://github.com/WenzheLiu/CodeToUML/blob/master/doc/self_seq.png)
 
 希望大家能喜欢！
